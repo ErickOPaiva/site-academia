@@ -1,119 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-  touch-action: manipulation;
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.card:hover {
+    transform: translateY(-10px);
 }
 
-
-header {
-  background: url('/images/hero-bg.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  position: relative;
+.cta {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 1;
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header h1 {
-  font-family: 'Bebas Neue', sans-serif; 
-  font-size: 48px;
-  color: #00ff00; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  margin-bottom: 20px;
-}
-
-header p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-header .btn {
-  background: #ff5722;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 18px;
-  border-radius: 5px;
-}
-
-/* Estilos do Menu */
-nav ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #00ff00; 
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 36px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn {
-    width: 100%;
-    margin-top: 10px;
-  }
+.cta:hover {
+    background-color: #e65c00;
 }
